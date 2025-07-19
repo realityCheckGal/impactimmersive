@@ -81,13 +81,11 @@ const Components = {
               Reimagined
             </h1>
             <p className="hero-description">
-              We connect purpose-driven organizations to their community by 
-              engaging hearts and minds with the persuasive power of Augmented 
-              Reality (AR).
+              We connect purpose-driven organizations to their community by engaging hearts and minds with the persuasive power of Augmented Reality (AR).
             </p>
             <button 
               className="cta-button"
-              onClick={() => scrollToSection('about')}
+              onClick={() => scrollToSection('we-know')}
             >
               dive in
             </button>
@@ -95,7 +93,7 @@ const Components = {
           <div className="hero-image">
             <img 
               src="https://images.unsplash.com/photo-1658555012297-edb48f0c2d4c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHx2aXJ0dWFsJTIwcmVhbGl0eSUyMGhlYWRzZXR8ZW58MHx8fGJsdWV8MTc1Mjk1NjIyMHww&ixlib=rb-4.1.0&q=85" 
-              alt="AR Technology Experience"
+              alt="Grandmother and child using AR technology"
               loading="lazy"
             />
           </div>
@@ -104,24 +102,67 @@ const Components = {
     </section>
   ),
 
-  AboutSection: () => (
-    <section id="about" className="about-section">
+  WeKnowSection: () => (
+    <section id="we-know" className="we-know-section">
       <div className="container">
-        <div className="section-content">
-          <div className="text-content">
-            <h2 className="section-title">What is Augmented Reality?</h2>
-            <p className="section-description">
-              Augmented Reality (AR) is a technology that combines the real world with 
-              computer-generated elements. It overlays digital information, such as images, 
-              360° sound, or 3D models, onto the physical world.
+        <div className="we-know-content">
+          <h2 className="we-know-title">
+            We Know You care<br />
+            deeply.
+          </h2>
+          
+          <div className="we-know-text">
+            <p>
+              And we understand how important it is for you to connect meaningfully with your community. That's why we specialize in building heartfelt connections between your story and the communities that you serve.
+            </p>
+            
+            <p>
+              We reach beyond the status quo to transform traditional communications. Transforming communications into interactive experiences with augmented reality that captivate, educate, and motivate social change in moving and enchanting ways.
+            </p>
+            
+            <p className="tagline">
+              It's easy not to care. We make it hard not to.
             </p>
           </div>
-          <div className="image-content">
+        </div>
+      </div>
+    </section>
+  ),
+
+  WhatIsARSection: () => (
+    <section id="what-is-ar" className="what-is-ar-section">
+      <div className="container">
+        <div className="ar-content">
+          <div className="ar-image">
             <img 
               src="https://images.unsplash.com/photo-1660100970983-645655a09b3e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHx2aXJ0dWFsJTIwcmVhbGl0eSUyMGhlYWRzZXR8ZW58MHx8fGJsdWV8MTc1Mjk1NjIyMHww&ixlib=rb-4.1.0&q=85" 
-              alt="AR Technology Demonstration"
+              alt="Person using AR with smartphone"
               loading="lazy"
             />
+          </div>
+          <div className="ar-text">
+            <h2 className="section-title">What is Augmented Reality?</h2>
+            <p>
+              Augmented Reality (AR) is a technology that combines the real world with computer-generated elements. It overlays digital information, such as images, 360° sound, or 3D models, onto the physical world, typically through the use of a smartphone, tablet, or specialized AR glasses.
+            </p>
+            <p>
+              Because virtual elements appear as if they are part of the physical environment, it allows users to interact with and manipulate virtual objects in real-time and 3D-space. These enhancements can provide valuable information, enjoyable entertainment, or unlock new educational possibilities.
+            </p>
+          </div>
+        </div>
+        
+        <div className="pain-points">
+          <div className="pain-point-questions">
+            <p>Do you feel your education methods are outdated and not making the impact you want to make with your communities?</p>
+            <p>Or maybe you find you are spending a lot of money on public outreach programs but don't see the value return?</p>
+            <p>In this attention economy, do you feel like it's hard to be seen or, worse, left behind?</p>
+            <p>Perhaps you want to be seen as a trendsetter...</p>
+          </div>
+          
+          <div className="vision-statement">
+            <p>We work with progressive organizations: non-profits, social enterprises, and municipalities who dream big and want to change the world.</p>
+            <p>Imagine a world where everyone can follow their dreams and be fully self-expressed. A world accessible to all people, inspiring generations to live in harmony with each other and the ecosystems that sustain all of life.</p>
+            <p className="services-intro">Our services help make that dream a reality.</p>
           </div>
         </div>
       </div>
@@ -131,7 +172,11 @@ const Components = {
   ServicesSection: () => (
     <section id="services" className="services-section">
       <div className="container">
-        <h2 className="section-title">Our Services</h2>
+        <h2 className="section-title">We create immersive experiences that impact hearts and minds</h2>
+        <p className="section-subtitle">
+          Imagine together, we could create a limitless new reality. One where we are profoundly connected to ourselves, the planet, and each other.
+        </p>
+        
         <div className="services-grid">
           <div className="service-card">
             <div className="service-image">
@@ -143,7 +188,7 @@ const Components = {
             </div>
             <div className="service-content">
               <h3>Immersive AR Experiences</h3>
-              <p>Create powerful augmented reality experiences that connect your organization with the community and drive meaningful engagement.</p>
+              <p>Create powerful augmented reality experiences that connect your organization with the community and drive meaningful engagement through interactive storytelling.</p>
             </div>
           </div>
           
@@ -151,13 +196,13 @@ const Components = {
             <div className="service-image">
               <img 
                 src="https://images.unsplash.com/photo-1618544976420-1f213fcf2052?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHx0ZWFtJTIwdGVjaG5vbG9neSUyMHdvcmtzcGFjZXxlbnwwfHx8Ymx1ZXwxNzUyOTU2MjAzfDA&ixlib=rb-4.1.0&q=85" 
-                alt="Content Development"
+                alt="Community Engagement"
                 loading="lazy"
               />
             </div>
             <div className="service-content">
-              <h3>Content Development</h3>
-              <p>Develop high-quality, diverse content across various sectors that enhances engagement and creates meaningful impact.</p>
+              <h3>Community Engagement</h3>
+              <p>Build heartfelt connections between your story and the communities you serve through innovative AR solutions that captivate, educate, and motivate social change.</p>
             </div>
           </div>
           
@@ -165,13 +210,13 @@ const Components = {
             <div className="service-image">
               <img 
                 src="https://images.unsplash.com/photo-1580983553600-c49a1d083f54?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwzfHx0ZWFtJTIwdGVjaG5vbG9neSUyMHdvcmtzcGFjZXxlbnwwfHx8Ymx1ZXwxNzUyOTU2MjAzfDA&ixlib=rb-4.1.0&q=85" 
-                alt="Educational Programs"
+                alt="Educational Innovation"
                 loading="lazy"
               />
             </div>
             <div className="service-content">
-              <h3>Educational Programs</h3>
-              <p>Training and educational programs focused on immersive technologies, preparing the next generation of creators and innovators.</p>
+              <h3>Educational Innovation</h3>
+              <p>Transform traditional education methods into interactive AR experiences that enhance learning outcomes and create lasting positive impact.</p>
             </div>
           </div>
         </div>
@@ -184,6 +229,7 @@ const Components = {
       <div className="container">
         <h2 className="section-title">Case Studies</h2>
         <div className="case-studies-grid">
+          
           <div className="case-study-card">
             <div className="case-study-image">
               <img 
@@ -194,7 +240,8 @@ const Components = {
             </div>
             <div className="case-study-content">
               <h3>Concrete Oasis</h3>
-              <p>Augmented reality will transform Pershing Square Park into a flourishing oasis. AR Experiences will educate the public about the water crisis.</p>
+              <p>Augmented reality will transform Pershing Square Park into a flourishing oasis. AR Experiences will be installed throughout the park that will educate the public about the water crisis, including facts about LA's water sources, the devastating impact on ecosystems when water is diverted from its natural flow, and revolutionary water technologies.</p>
+              <p className="case-study-impact">It's designed to inspire collective action toward a sustainable water future.</p>
             </div>
           </div>
           
@@ -208,7 +255,8 @@ const Components = {
             </div>
             <div className="case-study-content">
               <h3>Flowrish</h3>
-              <p>A mobile app that helps local residents visualize native plants in their landscape using augmented reality.</p>
+              <p>Flowrish is a mobile app that helps local residents visualize native plants placed in their landscape, seen with augmented reality.</p>
+              <p>By replacing non-native species with native ones, our water supply can be maximized, the ecosystem can be restored, and native species can return to thrive. This helps to heal the watershed and puts the flow back into the rivers.</p>
             </div>
           </div>
           
@@ -222,9 +270,11 @@ const Components = {
             </div>
             <div className="case-study-content">
               <h3>Emergent Virtues</h3>
-              <p>An AR networking app designed to incite conversation about potential futures shaped by emerging technologies.</p>
+              <p>Emergent Virtues was an AR networking app designed to incite conversation about potential futures shaped by emerging technologies. Participant badges included a QR code that when scanned displayed an object representing one of six virtues necessary for society to create a positive future.</p>
+              <p>To encourage interaction with each other, participants were prompted to collect all six objects, or virtues. The day concluded with a panel discussion among the creators of the objects representing the six virtues.</p>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
@@ -234,23 +284,23 @@ const Components = {
     const benefits = [
       {
         title: "Immersive Engagement",
-        description: "Create deep, meaningful connections through immersive AR experiences that capture attention and drive emotional engagement."
+        description: "AR creates a highly engaging and immersive experience by overlaying digital content onto the real world–captivating users' attention and curiosity, making learning and storytelling more compelling. It engages more of the senses, enabling users to explore and interact with virtual worlds, fostering a deep sense of engagement and connection."
       },
       {
         title: "Behavior Change and Impact",
-        description: "Leverage the persuasive power of AR to drive real behavioral change and create lasting positive impact in communities."
+        description: "AR has the potential to drive behavior change by evoking empathy. Through virtual simulation, users can witness the consequences of their actions or explore real-world challenges. By experiencing these impacts viscerally, Individuals become inspired to try new behaviors, make informed decisions, and take action towards positive change. Changes such as adopting sustainable practices or embracing empathy towards others."
       },
       {
         title: "Accessibility and Convenience",
-        description: "Make complex concepts accessible and convenient for diverse audiences through intuitive AR interfaces."
+        description: "With the widespread availability of smartphones and tablets, AR breaks down barriers, making AR inclusive and reaching a wide range of users. It eliminates the need for specialized hardware, making AR more convenient and readily available."
       },
       {
         title: "Learning and Education",
-        description: "Enhanced learning experiences through interactive AR that makes education more engaging and effective."
+        description: "AR enhances learning by providing interactive, hands-on, and personalized learning opportunities. It enables students to visualize complex concepts, explore simulations, and engage in experiential learning. Studies have shown that AR can increase attention, motivation, and knowledge retention, making it a powerful tool to enhance learning outcomes."
       },
       {
         title: "Gamification and Enjoyment",
-        description: "Incorporate game-like elements that make learning and engagement enjoyable while achieving serious objectives."
+        description: "Game mechanics, such as rewards, challenges, and progress tracking, add an element of fun and enjoyment to the user experience. Gamification enhances motivation, promotes active participation, and encourages users to explore and discover. Users spend more time engaging with the content, leading to deeper understanding and greater information retention."
       }
     ];
 
@@ -259,8 +309,7 @@ const Components = {
         <div className="container">
           <h2 className="section-title">Benefits of Augmented Reality for Public Outreach</h2>
           <p className="section-subtitle">
-            The immersive quality of augmented reality drives empathy, enhances learning 
-            and enjoyment, and makes a powerful tool for positive impact.
+            The immersive quality of augmented reality drives empathy, enhances learning and enjoyment, and makes a powerful tool for positive impact.
           </p>
           <div className="benefits-grid">
             {benefits.map((benefit, index) => (
@@ -275,33 +324,45 @@ const Components = {
     );
   },
 
+  FounderSection: () => (
+    <section id="founder" className="founder-section">
+      <div className="container">
+        <h2 className="section-title">Founder</h2>
+        <div className="founder-content">
+          <div className="founder-image">
+            <img 
+              src="https://images.unsplash.com/photo-1618544976420-1f213fcf2052?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHx0ZWFtJTIwdGVjaG5vbG9neSUyMHdvcmtzcGFjZXxlbnwwfHx8Ymx1ZXwxNzUyOTU2MjAzfDA&ixlib=rb-4.1.0&q=85" 
+              alt="Suzan Oslin - Founder"
+              loading="lazy"
+            />
+          </div>
+          <div className="founder-info">
+            <h3>Suzan Oslin</h3>
+            <p>
+              Suzan Oslin is an award-winning visionary leader in the augmented reality industry. She is a creative technologist with more than 30 years in design, technology, and team management at companies including Disney, Warner Brothers, and Technicolor. Suzan is passionate about bringing together diverse teams to create projects with a positive social impact.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  ),
+
   TeamSection: () => (
     <section id="team" className="team-section">
       <div className="container">
         <h2 className="section-title">Our Team</h2>
         <div className="team-content">
           <div className="team-text">
-            <div className="founder-info">
-              <h3>Suzan Oslin</h3>
-              <p className="founder-title">Founder & Visionary Leader</p>
-              <p className="founder-description">
-                An award-winning visionary leader in the augmented reality industry with over 30 years of experience.
-                Suzan brings decades of expertise in creating meaningful technology solutions that connect communities 
-                and drive positive change.
-              </p>
-            </div>
-            <div className="collaboration-info">
-              <h3>Collaboration at Our Core</h3>
-              <p>
-                At Impact Immersive, collaboration is at the heart of our social mission. We work with a diverse 
-                collective of professionals, academics, students, and consumers to create inclusive AR solutions 
-                that serve all communities.
-              </p>
-            </div>
+            <p>
+              At Impact Immersive, collaboration is at the heart of our social mission. We embrace a networked approach, partnering with creators and vendors who bring specialized skills to your projects. This allows us to stay agile and efficient, while keeping costs affordable.
+            </p>
+            <p>
+              We understand that your success relies on adaptability. We thrive on embracing change and quickly responding to new challenges and opportunities. In our dynamic work environment, every team member has a sense of purpose, autonomy, and the opportunity to make a meaningful contribution to the positive social impact you're committed to achieving.
+            </p>
           </div>
           <div className="team-image">
             <img 
-              src="https://images.unsplash.com/photo-1618544976420-1f213fcf2052?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHx0ZWFtJTIwdGVjaG5vbG9neSUyMHdvcmtzcGFjZXxlbnwwfHx8Ymx1ZXwxNzUyOTU2MjAzfDA&ixlib=rb-4.1.0&q=85" 
+              src="https://images.unsplash.com/photo-1580983553600-c49a1d083f54?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwzfHx0ZWFtJTIwdGVjaG5vbG9neSUyMHdvcmtzcGFjZXxlbnwwfHx8Ymx1ZXwxNzUyOTU2MjAzfDA&ixlib=rb-4.1.0&q=85" 
               alt="Our collaborative team"
               loading="lazy"
             />
@@ -315,14 +376,23 @@ const Components = {
     const [formData, setFormData] = useState({
       name: '',
       email: '',
-      organization: '',
-      message: ''
+      impactFocus: '',
+      impactRating: '3',
+      arFamiliarity: '3',
+      arPotential: ''
     });
 
     const handleSubmit = (e) => {
       e.preventDefault();
       alert('Thank you for your message! We\'ll get back to you soon.');
-      setFormData({ name: '', email: '', organization: '', message: '' });
+      setFormData({ 
+        name: '', 
+        email: '', 
+        impactFocus: '', 
+        impactRating: '3', 
+        arFamiliarity: '3', 
+        arPotential: '' 
+      });
     };
 
     const handleChange = (e) => {
@@ -334,90 +404,124 @@ const Components = {
 
     return (
       <section id="contact" className="contact-section">
-        <div className="container">
-          <h2 className="section-title">Contact Us</h2>
-          <div className="contact-content">
-            <div className="contact-info">
-              <div className="contact-item">
-                <h3>Get In Touch</h3>
-                <p>Ready to transform your public outreach with AR? Let's collaborate to create meaningful impact.</p>
-              </div>
-              <div className="contact-item">
-                <h4>Location</h4>
+        <div className="contact-hero">
+          <div className="contact-overlay">
+            <div className="container">
+              <h2 className="contact-title">Augment your Reality, Impact the World</h2>
+              
+              <form className="contact-form" onSubmit={handleSubmit}>
+                <div className="form-group">
+                  <label htmlFor="impactFocus">On what is your impact focused?</label>
+                  <textarea
+                    id="impactFocus"
+                    name="impactFocus"
+                    rows="3"
+                    value={formData.impactFocus}
+                    onChange={handleChange}
+                    required
+                  ></textarea>
+                </div>
+                
+                <div className="form-group">
+                  <label htmlFor="impactRating">On a scale from 1-5 (one being not very much, five being stellar) how impactful are your communications?</label>
+                  <select
+                    id="impactRating"
+                    name="impactRating"
+                    value={formData.impactRating}
+                    onChange={handleChange}
+                    required
+                  >
+                    <option value="1">1 - Not very much</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Stellar</option>
+                  </select>
+                </div>
+                
+                <div className="form-group">
+                  <label htmlFor="arFamiliarity">On a scale from 1-5 (one being not very much, five being expert) how familiar are you with augmented reality?</label>
+                  <select
+                    id="arFamiliarity"
+                    name="arFamiliarity"
+                    value={formData.arFamiliarity}
+                    onChange={handleChange}
+                    required
+                  >
+                    <option value="1">1 - Not very much</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 - Expert</option>
+                  </select>
+                </div>
+                
+                <div className="form-group">
+                  <label htmlFor="arPotential">How might augmented reality skyrocket your impact?</label>
+                  <textarea
+                    id="arPotential"
+                    name="arPotential"
+                    rows="3"
+                    value={formData.arPotential}
+                    onChange={handleChange}
+                    required
+                  ></textarea>
+                </div>
+                
+                <div className="form-group">
+                  <label htmlFor="name">First Name, Last Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                
+                <div className="form-group">
+                  <label htmlFor="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                
+                <button type="submit" className="submit-button">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        <div className="contact-footer">
+          <div className="container">
+            <div className="footer-content">
+              <div className="footer-info">
+                <h3>Impact Immersive</h3>
                 <p>Los Angeles, California, USA</p>
-              </div>
-              <div className="contact-item">
-                <h4>Email</h4>
-                <p>
-                  <a href="mailto:hello@impactimmersive.studio">hello@impactimmersive.studio</a>
-                </p>
-              </div>
-              <div className="contact-item">
-                <h4>Phone</h4>
-                <p>
-                  <a href="tel:+13233251705">+1 (323) 325-1705</a>
-                </p>
-              </div>
-              <div className="contact-item">
-                <h4>LinkedIn</h4>
-                <p>
+                <p><a href="mailto:hello@impactimmersive.studio">hello@impactimmersive.studio</a></p>
+                <p><a href="tel:+13233251705">+13233251705</a></p>
+                <div className="social-links">
                   <a href="https://www.linkedin.com/company/impactimmersive" target="_blank" rel="noopener noreferrer">
-                    linkedin.com/company/impactimmersive
+                    LinkedIn
                   </a>
-                </p>
+                </div>
+              </div>
+              
+              <div className="footer-legal">
+                <p>© 2025 Impact Immersive</p>
+                <div className="legal-links">
+                  <a href="#terms">Terms</a>
+                  <a href="#privacy">Privacy Policy</a>
+                </div>
+                <p className="website-credit">website by <a href="https://kokono.ie" target="_blank" rel="noopener noreferrer">kokono.ie</a></p>
               </div>
             </div>
-            
-            <form className="contact-form" onSubmit={handleSubmit}>
-              <div className="form-group">
-                <label htmlFor="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              
-              <div className="form-group">
-                <label htmlFor="organization">Organization</label>
-                <input
-                  type="text"
-                  id="organization"
-                  name="organization"
-                  value={formData.organization}
-                  onChange={handleChange}
-                />
-              </div>
-              
-              <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="5"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                ></textarea>
-              </div>
-              
-              <button type="submit" className="submit-button">Send Message</button>
-            </form>
           </div>
         </div>
       </section>
@@ -439,7 +543,7 @@ const Components = {
           <p>We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.</p>
           <div className="cookie-buttons">
             <button onClick={handleAccept} className="cookie-ok">OK</button>
-            <a href="#" className="cookie-policy">Privacy policy</a>
+            <a href="#privacy" className="cookie-policy">Privacy policy</a>
           </div>
         </div>
       </div>

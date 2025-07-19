@@ -9,10 +9,12 @@ function App() {
   const { 
     Header, 
     HeroSection, 
-    AboutSection, 
+    WeKnowSection,
+    WhatIsARSection, 
     ServicesSection, 
     CaseStudiesSection, 
     BenefitsSection, 
+    FounderSection,
     TeamSection, 
     ContactSection,
     CookieConsent
@@ -20,7 +22,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'services', 'case-studies', 'benefits', 'team', 'contact'];
+      const sections = ['home', 'we-know', 'what-is-ar', 'services', 'case-studies', 'benefits', 'founder', 'team', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       sections.forEach(section => {
@@ -59,10 +61,12 @@ function App() {
       
       <main>
         <HeroSection scrollToSection={scrollToSection} />
-        <AboutSection />
+        <WeKnowSection />
+        <WhatIsARSection />
         <ServicesSection />
         <CaseStudiesSection />
         <BenefitsSection />
+        <FounderSection />
         <TeamSection />
         <ContactSection />
       </main>
