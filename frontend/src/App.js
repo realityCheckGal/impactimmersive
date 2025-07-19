@@ -1,52 +1,73 @@
-import { useEffect } from "react";
-import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+import React, { useState, useEffect } from 'react';
+import './App.css';
+import Components from './components';
 
 function App() {
+  const [activeSection, setActiveSection] = useState('home');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const { 
+    Header, 
+    HeroSection, 
+    AboutSection, 
+    ServicesSection, 
+    CaseStudiesSection, 
+    BenefitsSection, 
+    TeamSection, 
+    ContactSection,
+    CookieConsent
+  } = Components;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['home', 'about', 'services', 'case-studies', 'benefits', 'team', 'contact'];
+      const scrollPosition = window.scrollY + 100;
+
+      sections.forEach(section => {
+        const element = document.getElementById(section);
+        if (element) {
+          const offsetTop = element.offsetTop;
+          const offsetHeight = element.offsetHeight;
+          
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(section);
+          }
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <Header 
+        activeSection={activeSection}
+        scrollToSection={scrollToSection}
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+      />
+      
+      <main>
+        <HeroSection scrollToSection={scrollToSection} />
+        <AboutSection />
+        <ServicesSection />
+        <CaseStudiesSection />
+        <BenefitsSection />
+        <TeamSection />
+        <ContactSection />
+      </main>
+      
+      <CookieConsent />
     </div>
   );
 }
