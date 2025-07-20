@@ -379,21 +379,25 @@ body {
 
 .case-studies-title {
   color: white;
-  font-size: 2.5rem;
-  font-weight: 100;
-  letter-spacing: -0.02em;
+  font-size: 3.2rem;
+  font-weight: 200;
+  letter-spacing: -0.025em;
   margin: 0;
+  line-height: 1.1;
 }
 
 /* Full-width case study containers */
 .case-study-full-width {
   background: #ffffff;
   padding: 80px 0;
-  border-bottom: 1px solid #f1f5f9;
 }
 
-.case-study-full-width:last-child {
-  border-bottom: none;
+/* Purple separator lines between case studies */
+.case-study-separator {
+  height: 2px;
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  width: 100%;
+  margin: 0;
 }
 
 .case-study-content-wrapper {
@@ -437,11 +441,33 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
+/* Project header with orange label and line */
+.project-header {
+  margin-bottom: 1.5rem;
+}
+
+.project-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #FF6B35;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.orange-line {
+  width: 60px;
+  height: 2px;
+  background: #FF6B35;
+  margin-bottom: 1rem;
+}
+
 .case-study-text h3 {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
-  color: #1e293b;
+  color: #7c3aed;
   letter-spacing: -0.015em;
 }
 
