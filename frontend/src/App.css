@@ -113,7 +113,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(135deg, #6B46C1 0%, #9333EA 100%);
+  background: linear-gradient(180deg, #7c3aed 0%, #8b5cf6 50%, #a855f7 100%);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -129,21 +129,21 @@ body {
 }
 
 .hero-title {
-  font-size: 4.5rem;
-  font-weight: 300;
-  line-height: 0.95;
-  margin-bottom: 1.5rem;
-  color: white;
-  letter-spacing: -0.02em;
+  font-size: 4.2rem;
+  font-weight: 200;
+  line-height: 0.9;
+  margin-bottom: 1.8rem;
+  color: rgba(255, 255, 255, 0.95);
+  letter-spacing: -0.025em;
 }
 
 .hero-description {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.6;
   margin-bottom: 2.5rem;
-  color: rgba(255, 255, 255, 0.9);
-  max-width: 500px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 480px;
 }
 
 .cta-button {
