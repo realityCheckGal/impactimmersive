@@ -472,16 +472,16 @@ body {
 }
 
 .benefit-card h3 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   color: #7c3aed;
 }
 
 .benefit-card p {
   color: #64748b;
-  line-height: 1.6;
-  font-size: 0.95rem;
+  line-height: 1.5;
+  font-size: 0.85rem;
 }
 
 /* Founder Section */
