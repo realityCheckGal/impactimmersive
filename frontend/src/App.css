@@ -652,10 +652,11 @@ body {
 }
 
 .footer-info h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  margin-bottom: 1rem;
-  letter-spacing: -0.01em;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.005em;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .footer-info p {
