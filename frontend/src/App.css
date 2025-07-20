@@ -615,8 +615,6 @@ body {
 .benefit-item.active {
   background: rgba(255, 255, 255, 0.03);
   border-radius: 8px;
-  padding: 0 1rem;
-  margin: 0.5rem 0;
 }
 
 /* Founder Section */
