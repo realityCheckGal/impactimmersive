@@ -412,22 +412,22 @@ body {
 }
 
 .case-study-content h3 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
   color: #1e293b;
 }
 
 .case-study-content p {
-  color: #475569;
-  line-height: 1.7;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+  font-size: 0.85rem;
 }
 
 .case-study-impact {
   font-weight: 500 !important;
-  color: #6B46C1 !important;
+  color: #7c3aed !important;
 }
 
 /* Benefits Section */
