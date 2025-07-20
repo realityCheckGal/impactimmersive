@@ -92,7 +92,7 @@ const Components = {
           </div>
           <div className="hero-image">
             <img 
-              src="https://drive.google.com/uc?export=view&id=1G1Sb1upHADNV2gf5l21V2aku6gjbJtox" 
+              src="/images/hero-image.jpg" 
               alt="AR Technology Headset"
               loading="lazy"
             />
