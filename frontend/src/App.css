@@ -177,38 +177,39 @@ body {
 
 /* We Know Section */
 .we-know-section {
-  background: linear-gradient(135deg, #6B46C1 0%, #9333EA 100%);
-  padding: 120px 0;
+  background: linear-gradient(180deg, #a855f7 0%, #8b5cf6 50%, #7c3aed 100%);
+  padding: 100px 0;
   color: white;
   text-align: center;
 }
 
 .we-know-title {
-  font-size: 3.5rem;
-  font-weight: 300;
-  line-height: 1.1;
+  font-size: 3.2rem;
+  font-weight: 200;
+  line-height: 1.0;
   margin-bottom: 3rem;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .we-know-text {
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
 .we-know-text p {
-  font-size: 1.2rem;
-  line-height: 1.7;
-  margin-bottom: 2rem;
-  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+  color: rgba(255, 255, 255, 0.8);
   font-weight: 400;
 }
 
 .we-know-text .tagline {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: white;
-  margin-top: 3rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 2rem;
 }
 
 /* What is AR Section */
