@@ -69,6 +69,7 @@ function App() {
         <WhatIsARSection />
         <PainPointsSection />
         <VisionSection />
+        <ImmersiveExperiencesSection scrollToSection={scrollToSection} />
         <ServicesSection />
         <CaseStudiesSection />
         <BenefitsSection />
