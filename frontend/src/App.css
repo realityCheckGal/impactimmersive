@@ -720,9 +720,10 @@ body {
 }
 
 .website-credit a {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   transition: color 0.3s ease;
+  font-size: 0.85rem;
 }
 
 .website-credit a:hover {
