@@ -646,17 +646,40 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.founder-info h3 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #1e293b;
+/* Founder header with orange label and line - matching case studies */
+.founder-header {
+  margin-bottom: 1.5rem;
+}
+
+.founder-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #FF6B35;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.founder-orange-line {
+  width: 60px;
+  height: 2px;
+  background: #FF6B35;
   margin-bottom: 1rem;
+}
+
+.founder-info h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #7c3aed;
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.015em;
 }
 
 .founder-info p {
   color: #64748b;
-  line-height: 1.5;
-  font-size: 0.9rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 /* Team Section */
