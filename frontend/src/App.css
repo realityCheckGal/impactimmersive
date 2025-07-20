@@ -545,10 +545,10 @@ body {
 }
 
 .team-text p {
-  color: #475569;
-  line-height: 1.7;
-  margin-bottom: 2rem;
-  font-size: 1.1rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
 }
 
 .team-image img {
