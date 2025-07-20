@@ -235,17 +235,13 @@ const Components = {
   ServicesSection: () => (
     <section id="services" className="services-section">
       <div className="container">
-        <h2 className="section-title">We create immersive experiences that impact hearts and minds</h2>
-        <p className="section-subtitle">
-          Imagine together, we could create a limitless new reality. One where we are profoundly connected to ourselves, the planet, and each other.
-        </p>
-        <p className="section-cta">Let's make that dream a reality.</p>
+        <h2 className="section-title">Our Services</h2>
         
         <div className="services-grid">
           <div className="service-card">
             <div className="service-image">
               <img 
-                src="/images/services-upper-right.jpg" 
+                src="https://images.unsplash.com/photo-1660020618837-aea80a4b7d87?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHx2aXJ0dWFsJTIwcmVhbGl0eSUyMGhlYWRzZXR8ZW58MHx8fGJsdWV8MTc1Mjk1NjIyMHww&ixlib=rb-4.1.0&q=85" 
                 alt="Immersive AR Experiences"
                 loading="lazy"
               />
@@ -259,7 +255,7 @@ const Components = {
           <div className="service-card">
             <div className="service-image">
               <img 
-                src="/images/services-lower-right.jpg" 
+                src="https://images.unsplash.com/photo-1618544976420-1f213fcf2052?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHx0ZWFtJTIwdGVjaG5vbG9neSUyMHdvcmtzcGFjZXxlbnwwfHx8Ymx1ZXwxNzUyOTU2MjAzfDA&ixlib=rb-4.1.0&q=85" 
                 alt="Community Engagement"
                 loading="lazy"
               />
@@ -280,7 +276,7 @@ const Components = {
             </div>
             <div className="service-content">
               <h3>Educational Innovation</h3>
-              <p>Transform traditional education methods into interactive AR experiences that enhance learning outcomes and create lasting positive impact.</p>
+              <p>Transform traditional learning through cutting-edge educational technology that creates engaging, measurable outcomes and fosters deep sense of engagement and connection.</p>
             </div>
           </div>
         </div>
