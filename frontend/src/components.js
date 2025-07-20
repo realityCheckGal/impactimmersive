@@ -150,19 +150,39 @@ const Components = {
             </p>
           </div>
         </div>
-        
-        <div className="pain-points">
-          <div className="pain-point-questions">
-            <p>Do you feel your education methods are outdated and not making the impact you want to make with your communities?</p>
-            <p>Or maybe you find you are spending a lot of money on public outreach programs but don't see the value return?</p>
-            <p>In this attention economy, do you feel like it's hard to be seen or, worse, left behind?</p>
-            <p>Perhaps you want to be seen as a trendsetter...</p>
+      </div>
+    </section>
+  ),
+
+  PainPointsSection: () => (
+    <section id="pain-points" className="pain-points-section">
+      <div className="container">
+        <div className="pain-points-content">
+          <div className="pain-points-text">
+            <div className="pain-point-questions">
+              <p>Do you feel your education methods are outdated and not making the impact you want to make with your communities?</p>
+              <p>Or maybe you find you are spending a lot of money on public outreach programs but don't see the value return?</p>
+              <p>In this attention economy, do you feel like it's hard to be seen or, worse, left behind?</p>
+              <p>Perhaps you want to be seen as a trendsetter...</p>
+            </div>
+            
+            <div className="vision-statement">
+              <p>We work with progressive organizations: non-profits, social enterprises, and municipalities who dream big and want to change the world.</p>
+              <p>Imagine a world where everyone can follow their dreams and be fully self-expressed. A world accessible to all people, inspiring generations to live in harmony with each other and the ecosystems that sustain all of life.</p>
+              <p className="services-intro">Our services help make that dream a reality.</p>
+            </div>
           </div>
-          
-          <div className="vision-statement">
-            <p>We work with progressive organizations: non-profits, social enterprises, and municipalities who dream big and want to change the world.</p>
-            <p>Imagine a world where everyone can follow their dreams and be fully self-expressed. A world accessible to all people, inspiring generations to live in harmony with each other and the ecosystems that sustain all of life.</p>
-            <p className="services-intro">Our services help make that dream a reality.</p>
+          <div className="pain-points-visual">
+            <div className="giant-question-mark">
+              <svg viewBox="0 0 200 300" className="question-mark-svg">
+                <path d="M100 50 Q150 50 150 100 Q150 130 100 150 L100 180" 
+                      stroke="rgba(255,255,255,0.9)" 
+                      strokeWidth="8" 
+                      fill="none" 
+                      strokeLinecap="round"/>
+                <circle cx="100" cy="220" r="8" fill="rgba(255,255,255,0.9)"/>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
