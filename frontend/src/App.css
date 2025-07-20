@@ -1085,6 +1085,12 @@ body {
     text-align: center;
   }
 
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
   .benefits-layout {
     grid-template-columns: 1fr;
     gap: 2rem;
