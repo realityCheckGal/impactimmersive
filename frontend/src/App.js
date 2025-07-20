@@ -15,7 +15,8 @@ function App() {
     CaseStudiesSection, 
     BenefitsSection, 
     FounderSection,
-    TeamSection, 
+    TeamSection,
+    LogoSection,
     ContactSection,
     CookieConsent
   } = Components;
