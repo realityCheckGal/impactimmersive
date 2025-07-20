@@ -65,6 +65,7 @@ function App() {
         <HeroSection scrollToSection={scrollToSection} />
         <WeKnowSection />
         <WhatIsARSection />
+        <PainPointsSection />
         <ServicesSection />
         <CaseStudiesSection />
         <BenefitsSection />
