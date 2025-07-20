@@ -226,11 +226,17 @@ const Components = {
 
   CaseStudiesSection: () => (
     <section id="case-studies" className="case-studies-section">
-      <div className="container">
-        <h2 className="section-title">Case Studies</h2>
-        <div className="case-studies-grid">
-          
-          <div className="case-study-card">
+      {/* Purple header section with title */}
+      <div className="case-studies-header">
+        <div className="container">
+          <h2 className="case-studies-title">Case Studies</h2>
+        </div>
+      </div>
+
+      {/* Case Study 1: Image Left, Text Right */}
+      <div className="case-study-full-width">
+        <div className="container">
+          <div className="case-study-content-wrapper case-study-image-left">
             <div className="case-study-image">
               <img 
                 src="https://images.unsplash.com/photo-1607510643672-6136fa994399?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHxuYXR1cmUlMjBlbnZpcm9ubWVudHxlbnwwfHx8Ymx1ZXwxNzUyOTU2MjI4fDA&ixlib=rb-4.1.0&q=85" 
@@ -238,14 +244,24 @@ const Components = {
                 loading="lazy"
               />
             </div>
-            <div className="case-study-content">
+            <div className="case-study-text">
               <h3>Concrete Oasis</h3>
               <p>Augmented reality will transform Pershing Square Park into a flourishing oasis. AR Experiences will be installed throughout the park that will educate the public about the water crisis, including facts about LA's water sources, the devastating impact on ecosystems when water is diverted from its natural flow, and revolutionary water technologies.</p>
               <p className="case-study-impact">It's designed to inspire collective action toward a sustainable water future.</p>
             </div>
           </div>
-          
-          <div className="case-study-card">
+        </div>
+      </div>
+
+      {/* Case Study 2: Text Left, Image Right */}
+      <div className="case-study-full-width">
+        <div className="container">
+          <div className="case-study-content-wrapper case-study-text-left">
+            <div className="case-study-text">
+              <h3>Flowrish</h3>
+              <p>Flowrish is a mobile app that helps local residents visualize native plants placed in their landscape, seen with augmented reality.</p>
+              <p>By replacing non-native species with native ones, our water supply can be maximized, the ecosystem can be restored, and native species can return to thrive. This helps to heal the watershed and puts the flow back into the rivers.</p>
+            </div>
             <div className="case-study-image">
               <img 
                 src="https://images.unsplash.com/photo-1656163158223-0150e7e12cc6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxuYXR1cmUlMjBlbnZpcm9ubWVudHxlbnwwfHx8Ymx1ZXwxNzUyOTU2MjI4fDA&ixlib=rb-4.1.0&q=85" 
@@ -253,14 +269,14 @@ const Components = {
                 loading="lazy"
               />
             </div>
-            <div className="case-study-content">
-              <h3>Flowrish</h3>
-              <p>Flowrish is a mobile app that helps local residents visualize native plants placed in their landscape, seen with augmented reality.</p>
-              <p>By replacing non-native species with native ones, our water supply can be maximized, the ecosystem can be restored, and native species can return to thrive. This helps to heal the watershed and puts the flow back into the rivers.</p>
-            </div>
           </div>
-          
-          <div className="case-study-card">
+        </div>
+      </div>
+
+      {/* Case Study 3: Image Left, Text Right */}
+      <div className="case-study-full-width">
+        <div className="container">
+          <div className="case-study-content-wrapper case-study-image-left">
             <div className="case-study-image">
               <img 
                 src="https://images.unsplash.com/photo-1716703742196-9986679eb03f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwdGVjaG5vbG9neSUyMHdvcmtzcGFjZXxlbnwwfHx8Ymx1ZXwxNzUyOTU2MjAzfDA&ixlib=rb-4.1.0&q=85" 
@@ -268,13 +284,12 @@ const Components = {
                 loading="lazy"
               />
             </div>
-            <div className="case-study-content">
+            <div className="case-study-text">
               <h3>Emergent Virtues</h3>
               <p>Emergent Virtues was an AR networking app designed to incite conversation about potential futures shaped by emerging technologies. Participant badges included a QR code that when scanned displayed an object representing one of six virtues necessary for society to create a positive future.</p>
               <p>To encourage interaction with each other, participants were prompted to collect all six objects, or virtues. The day concluded with a panel discussion among the creators of the objects representing the six virtues.</p>
             </div>
           </div>
-          
         </div>
       </div>
     </section>
