@@ -434,8 +434,60 @@ const Components = {
           </div>
           <div className="team-image">
             <img 
-              src="https://images.unsplash.com/photo-1580983553600-c49a1d083f54?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwzfHx0ZWFtJTIwdGVjaG5vbG9neSUyMHdvcmtzcGFjZXxlbnwwfHx8Ymx1ZXwxNzUyOTU2MjAzfDA&ixlib=rb-4.1.0&q=85" 
+              src="https://images.unsplash.com/photo-1580983553600-c49a1d083f54?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwzfHx0ZWFtJTIwdGVjaG5vbG9neSUyMHdvcmtzcGFjZXhlbnwwfHx8Ymx1ZXwxNzUyOTU2MjAzfDA&ixlib=rb-4.1.0&q=85" 
               alt="Our collaborative team"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  ),
+
+  LogoSection: () => (
+    <section id="partners" className="logo-section">
+      <div className="container">
+        <h2 className="logo-section-title">Trusted Partners & Collaborators</h2>
+        <div className="logos-grid">
+          <div className="logo-item">
+            <img 
+              src="https://via.placeholder.com/150x80/7c3aed/ffffff?text=Disney"
+              alt="Disney"
+              loading="lazy"
+            />
+          </div>
+          <div className="logo-item">
+            <img 
+              src="https://via.placeholder.com/150x80/7c3aed/ffffff?text=Warner+Bros"
+              alt="Warner Brothers"
+              loading="lazy"
+            />
+          </div>
+          <div className="logo-item">
+            <img 
+              src="https://via.placeholder.com/150x80/7c3aed/ffffff?text=Technicolor"
+              alt="Technicolor"
+              loading="lazy"
+            />
+          </div>
+          <div className="logo-item">
+            <img 
+              src="https://via.placeholder.com/150x80/7c3aed/ffffff?text=Unity"
+              alt="Unity Technologies"
+              loading="lazy"
+            />
+          </div>
+          <div className="logo-item">
+            <img 
+              src="https://via.placeholder.com/150x80/7c3aed/ffffff?text=Microsoft"
+              alt="Microsoft"
+              loading="lazy"
+            />
+          </div>
+          <div className="logo-item">
+            <img 
+              src="https://via.placeholder.com/150x80/7c3aed/ffffff?text=Meta"
+              alt="Meta"
               loading="lazy"
             />
           </div>
