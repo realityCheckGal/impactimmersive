@@ -660,8 +660,9 @@ body {
 }
 
 .footer-info p {
-  margin-bottom: 0.5rem;
-  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.4rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
 }
 
 .footer-info a {
