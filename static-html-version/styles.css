@@ -897,9 +897,14 @@ body {
     gap: 2rem;
   }
 
-  .case-study-card {
-    grid-template-columns: 1fr;
-    gap: 0;
+  .case-study-content-wrapper {
+    grid-template-columns: 1fr !important;
+    gap: 2rem;
+    grid-template-areas: "image" "text" !important;
+  }
+
+  .case-studies-title {
+    font-size: 2rem;
   }
 
   .footer-content {
