@@ -352,16 +352,16 @@ body {
 }
 
 .service-content h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
   color: #1e293b;
 }
 
 .service-content p {
-  color: #475569;
-  line-height: 1.6;
-  font-size: 1rem;
+  color: #64748b;
+  line-height: 1.5;
+  font-size: 0.85rem;
 }
 
 /* Case Studies Section */
