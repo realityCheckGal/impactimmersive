@@ -207,10 +207,39 @@ body {
 
 /* We Know Section */
 .we-know-section {
-  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  background-image: url('images/we-care-background.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   padding: 80px 0;
   color: white;
   text-align: center;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.we-know-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(124, 58, 237, 0.8);
+  z-index: 1;
+}
+
+.we-know-section .container {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+}
+
+.we-know-content {
+  position: relative;
+  z-index: 2;
 }
 
 .we-know-title {
