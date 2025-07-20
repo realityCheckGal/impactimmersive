@@ -165,25 +165,31 @@ const Components = {
               <p>In this attention economy, do you feel like it's hard to be seen or, worse, left behind?</p>
               <p>Perhaps you want to be seen as a trendsetter...</p>
             </div>
-            
-            <div className="vision-statement">
-              <p>We work with progressive organizations: non-profits, social enterprises, and municipalities who dream big and want to change the world.</p>
-              <p>Imagine a world where everyone can follow their dreams and be fully self-expressed. A world accessible to all people, inspiring generations to live in harmony with each other and the ecosystems that sustain all of life.</p>
-              <p className="services-intro">Our services help make that dream a reality.</p>
-            </div>
           </div>
           <div className="pain-points-visual">
             <div className="giant-question-mark">
               <svg viewBox="0 0 200 300" className="question-mark-svg">
-                <path d="M100 50 Q150 50 150 100 Q150 130 100 150 L100 180" 
-                      stroke="rgba(255,255,255,0.9)" 
-                      strokeWidth="8" 
+                <path d="M100 40 Q160 40 160 100 Q160 140 100 160 L100 200" 
+                      stroke="white" 
+                      strokeWidth="20" 
                       fill="none" 
                       strokeLinecap="round"/>
-                <circle cx="100" cy="220" r="8" fill="rgba(255,255,255,0.9)"/>
+                <circle cx="100" cy="240" r="15" fill="white"/>
               </svg>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+  ),
+
+  VisionSection: () => (
+    <section id="vision" className="vision-section">
+      <div className="container">
+        <div className="vision-content">
+          <p>We work with progressive organizations: non-profits, social enterprises, and municipalities who dream big and want to change the world.</p>
+          <p>Imagine a world where everyone can follow their dreams and be fully self-expressed. A world accessible to all people, inspiring generations to live in harmony with each other and the ecosystems that sustain all of life.</p>
+          <p className="services-intro">Our services help make that dream a reality.</p>
         </div>
       </div>
     </section>
