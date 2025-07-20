@@ -725,15 +725,17 @@ body {
 /* Team Section */
 .team-section {
   padding: 80px 0;
-  background: #f8fafc;
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  color: white;
 }
 
 .team-section .section-title {
   text-align: center;
   margin-bottom: 3rem;
-  color: #1e293b;
-  font-size: 1.9rem;
-  font-weight: 400;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 200;
+  letter-spacing: -0.02em;
 }
 
 .team-content {
@@ -744,10 +746,10 @@ body {
 }
 
 .team-text p {
-  color: #64748b;
-  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
   margin-bottom: 1.2rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .team-image img {
