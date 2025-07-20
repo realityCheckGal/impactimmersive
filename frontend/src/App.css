@@ -114,12 +114,12 @@ body {
 
 /* Hero Section */
 .hero-section {
-  background: #ffffff;
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
   min-height: 100vh;
   display: flex;
   align-items: center;
   padding-top: 80px;
-  color: #333;
+  color: white;
 }
 
 .hero-content {
