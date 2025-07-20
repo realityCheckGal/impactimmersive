@@ -299,6 +299,82 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
+/* Pain Points Section */
+.pain-points-section {
+  background: linear-gradient(135deg, #ff6b9d 0%, #9c40ff 50%, #ff8c42 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  color: white;
+}
+
+.pain-points-section .container {
+  padding: 0;
+  max-width: none;
+  width: 100%;
+}
+
+.pain-points-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  align-items: center;
+  height: 100vh;
+}
+
+.pain-points-text {
+  text-align: left;
+  padding: 0 4rem 0 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pain-points-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.giant-question-mark {
+  width: 300px;
+  height: 400px;
+}
+
+.question-mark-svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+}
+
+.pain-point-questions p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.vision-statement {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.vision-statement p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.services-intro {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 1);
+}
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
 }
