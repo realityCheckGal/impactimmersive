@@ -686,8 +686,11 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Founder header with orange label and line - matching case studies */
+/* Founder header with orange label and line inline */
 .founder-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
@@ -697,15 +700,12 @@ body {
   color: #FF6B35;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  display: block;
-  margin-bottom: 0.5rem;
 }
 
 .founder-orange-line {
   width: 60px;
   height: 2px;
   background: #FF6B35;
-  margin-bottom: 1rem;
 }
 
 .founder-info h3 {
