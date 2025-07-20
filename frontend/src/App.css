@@ -302,7 +302,7 @@ body {
 
 /* Pain Points Section */
 .pain-points-section {
-  background: linear-gradient(135deg, #ff6b9d 0%, #9c40ff 50%, #ff8c42 100%);
+  background: linear-gradient(to bottom, #ff6b9d 0%, #9c40ff 50%, #ff8c42 100%);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -340,40 +340,50 @@ body {
 }
 
 .giant-question-mark {
-  width: 300px;
-  height: 400px;
+  width: 500px;
+  height: 600px;
 }
 
 .question-mark-svg {
   width: 100%;
   height: 100%;
-  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+  filter: drop-shadow(0 15px 30px rgba(0,0,0,0.4));
 }
 
 .pain-point-questions p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
-  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 1.8rem;
+  color: white;
+  font-weight: 400;
 }
 
-.vision-statement {
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+/* Vision Section */
+.vision-section {
+  background: #ffffff;
+  padding: 80px 0;
+  color: #333;
+  text-align: center;
 }
 
-.vision-statement p {
-  font-size: 1rem;
-  line-height: 1.7;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.9);
+.vision-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.services-intro {
-  font-weight: 500;
+.vision-content p {
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 1);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: #475569;
+}
+
+.vision-content .services-intro {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #7c3aed;
+  margin-top: 2rem;
 }
 
 .section-title {
