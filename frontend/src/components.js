@@ -168,13 +168,13 @@ const Components = {
           </div>
           <div className="pain-points-visual">
             <div className="giant-question-mark">
-              <svg viewBox="0 0 200 300" className="question-mark-svg">
-                <path d="M100 40 Q160 40 160 100 Q160 140 100 160 L100 200" 
+              <svg viewBox="0 0 400 600" className="question-mark-svg">
+                <path d="M200 80 Q320 80 320 180 Q320 250 200 280 L200 380" 
                       stroke="white" 
-                      strokeWidth="20" 
+                      strokeWidth="40" 
                       fill="none" 
                       strokeLinecap="round"/>
-                <circle cx="100" cy="240" r="15" fill="white"/>
+                <circle cx="200" cy="500" r="30" fill="white"/>
               </svg>
             </div>
           </div>
