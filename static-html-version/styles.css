@@ -134,7 +134,7 @@ body {
   font-weight: 100;
   line-height: 0.85;
   margin-bottom: 2rem;
-  color: #1e293b;
+  color: rgba(255, 255, 255, 0.98);
   letter-spacing: -0.02em;
 }
 
