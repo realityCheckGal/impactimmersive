@@ -698,9 +698,9 @@ body {
 }
 
 .footer-legal p {
-  margin-bottom: 0.5rem;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
 }
 
 .legal-links {
