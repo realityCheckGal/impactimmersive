@@ -564,22 +564,23 @@ body {
 
 /* Contact Section */
 .contact-section {
-  background: white;
+  background: #ffffff;
 }
 
 .contact-hero {
-  background: linear-gradient(rgba(107, 70, 193, 0.9), rgba(147, 51, 234, 0.9)), 
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.9), rgba(168, 85, 247, 0.9)), 
               url('https://images.unsplash.com/photo-1607510643672-6136fa994399?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHxuYXR1cmUlMjBlbnZpcm9ubWVudHxlbnwwfHx8Ymx1ZXwxNzUyOTU2MjI4fDA&ixlib=rb-4.1.0&q=85') center/cover;
-  padding: 120px 0;
+  padding: 80px 0;
   color: white;
   text-align: center;
 }
 
 .contact-title {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: 300;
-  margin-bottom: 3rem;
-  letter-spacing: -0.02em;
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.015em;
+  color: rgba(255, 255, 255, 0.98);
 }
 
 .contact-form {
