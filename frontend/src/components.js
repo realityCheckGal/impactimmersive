@@ -314,6 +314,8 @@ const Components = {
   ),
 
   BenefitsSection: () => {
+    const [activeIndex, setActiveIndex] = useState(null);
+    
     const benefits = [
       {
         title: "Immersive Engagement",
@@ -337,20 +339,54 @@ const Components = {
       }
     ];
 
+    const toggleBenefit = (index) => {
+      setActiveIndex(activeIndex === index ? null : index);
+    };
+
     return (
       <section id="benefits" className="benefits-section">
-        <div className="container">
-          <h2 className="section-title">Benefits of Augmented Reality for Public Outreach</h2>
-          <p className="section-subtitle">
-            The immersive quality of augmented reality drives empathy, enhances learning and enjoyment, and makes a powerful tool for positive impact.
-          </p>
-          <div className="benefits-grid">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="benefit-card">
-                <h3>{benefit.title}</h3>
-                <p>{benefit.description}</p>
+        <div className="benefits-header">
+          <div className="container">
+            <h2 className="benefits-main-title">Benefits of Augmented Reality for Public Outreach</h2>
+            <p className="benefits-subtitle">
+              The immersive quality of augmented reality drives empathy, enhances learning and enjoyment, and makes a powerful tool for positive impact.
+            </p>
+          </div>
+        </div>
+        
+        <div className="benefits-content">
+          <div className="container">
+            <div className="benefits-layout">
+              <div className="benefits-image">
+                <img 
+                  src="https://images.unsplash.com/photo-1660020618837-aea80a4b7d87?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHx2aXJ0dWFsJTIwcmVhbGl0eSUyMGhlYWRzZXR8ZW58MHx8fGJsdWV8MTc1Mjk1NjIyMHww&ixlib=rb-4.1.0&q=85" 
+                  alt="AR Benefits Visualization"
+                  loading="lazy"
+                />
               </div>
-            ))}
+              
+              <div className="benefits-list">
+                {benefits.map((benefit, index) => (
+                  <div 
+                    key={index} 
+                    className={`benefit-item ${activeIndex === index ? 'active' : ''}`}
+                  >
+                    <div 
+                      className="benefit-header"
+                      onClick={() => toggleBenefit(index)}
+                    >
+                      <h3>{benefit.title}</h3>
+                      <span className={`benefit-toggle ${activeIndex === index ? 'expanded' : ''}`}>
+                        {activeIndex === index ? '−' : '+'}
+                      </span>
+                    </div>
+                    <div className={`benefit-description ${activeIndex === index ? 'expanded' : ''}`}>
+                      <p>{benefit.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
