@@ -647,7 +647,7 @@ const Components = {
                 <p>© 2025 Impact Immersive</p>
               </div>
               <div className="footer-legal">
-                <a href="#terms">Terms</a>
+                <a href="/terms.html">Terms</a>
                 <a href="#privacy">Privacy Policy</a>
               </div>
             </div>
