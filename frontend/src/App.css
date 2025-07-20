@@ -489,7 +489,10 @@ body {
 
 .founder-section .section-title {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
+  color: #1e293b;
+  font-size: 2.2rem;
+  font-weight: 500;
 }
 
 .founder-content {
