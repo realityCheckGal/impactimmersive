@@ -439,8 +439,11 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
-/* Project header with orange label and line */
+/* Project header with orange label and line inline */
 .project-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
@@ -450,15 +453,12 @@ body {
   color: #FF6B35;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  display: block;
-  margin-bottom: 0.5rem;
 }
 
 .orange-line {
   width: 60px;
   height: 2px;
   background: #FF6B35;
-  margin-bottom: 1rem;
 }
 
 .case-study-text h3 {
