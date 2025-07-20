@@ -373,29 +373,42 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 80px 0;
+  padding: 120px 0;
   color: white;
   text-align: center;
 }
 
 .vision-content {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
-.vision-content p {
-  font-size: 1.3rem;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-  color: #ffffff;
+.vision-content p:first-child {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin-bottom: 3rem;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+.vision-content p:nth-child(2) {
+  font-size: 1.35rem;
+  line-height: 1.6;
+  margin-bottom: 3.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+  letter-spacing: -0.005em;
 }
 
 .vision-content .services-intro {
-  font-weight: 500;
-  font-size: 1.4rem;
-  color: #ffffff;
-  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 0;
+  letter-spacing: -0.005em;
 }
 
 .section-title {
