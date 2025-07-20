@@ -557,8 +557,6 @@ body {
 
 .benefit-header:hover {
   background: rgba(255, 255, 255, 0.05);
-  padding-left: 1rem;
-  padding-right: 1rem;
   border-radius: 8px;
 }
 
