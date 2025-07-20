@@ -1126,10 +1126,10 @@ body {
     height: 300px;
   }
 
-  .case-study-content-wrapper {
-    grid-template-columns: 1fr !important;
-    gap: 2rem;
-    grid-template-areas: "image" "text" !important;
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
   }
 
   .case-studies-title {
