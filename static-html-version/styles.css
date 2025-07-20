@@ -887,43 +887,44 @@ body {
 /* Contact Footer */
 .contact-footer {
   background: linear-gradient(180deg, #7c3aed 0%, #8b5cf6 100%);
-  padding: 2.5rem 0 1.5rem;
+  padding: 3rem 0 1.5rem;
   color: white;
 }
 
-.footer-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
+.footer-main {
+  margin-bottom: 2rem;
 }
 
-.footer-info h3 {
-  font-size: 1.2rem;
+.footer-company-info {
+  text-align: center;
+}
+
+.footer-company-info h3 {
+  font-size: 1.3rem;
   font-weight: 400;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
   letter-spacing: -0.005em;
   color: rgba(255, 255, 255, 0.95);
 }
 
-.footer-info p {
-  margin-bottom: 0.4rem;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.9rem;
+.footer-company-info p {
+  margin-bottom: 0.8rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
 }
 
-.footer-info a {
-  color: rgba(255, 255, 255, 0.8);
+.footer-company-info a {
+  color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.footer-info a:hover {
+.footer-company-info a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
 .social-links {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
 }
 
 .social-links a {
@@ -940,41 +941,40 @@ body {
   background: rgba(255, 255, 255, 0.3);
 }
 
+/* Footer separator line */
+.footer-separator {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 2rem 0 1.5rem;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copyright p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
 .footer-legal {
-  text-align: right;
+  display: flex;
+  gap: 1.5rem;
 }
 
-.footer-legal p {
-  margin-bottom: 0.4rem;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.85rem;
-}
-
-.legal-links {
-  margin-bottom: 1rem;
-}
-
-.legal-links a {
+.footer-legal a {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
-  margin: 0 0.4rem;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   transition: color 0.3s ease;
 }
 
-.legal-links a:hover {
-  color: white;
-}
-
-.website-credit a {
-  color: rgba(255, 255, 255, 0.7);
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-size: 0.85rem;
-}
-
-.website-credit a:hover {
-  color: white;
+.footer-legal a:hover {
+  color: rgba(255, 255, 255, 1);
 }
 
 /* Cookie Consent */
