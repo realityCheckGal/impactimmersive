@@ -207,12 +207,39 @@ body {
 
 /* We Know Section */
 .we-know-section {
-  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%),
-              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-  background-blend-mode: overlay;
+  background-image: url('/images/we-care-background.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   padding: 80px 0;
   color: white;
   text-align: center;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.we-know-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(124, 58, 237, 0.8);
+  z-index: 1;
+}
+
+.we-know-section .container {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+}
+
+.we-know-content {
+  position: relative;
+  z-index: 2;
 }
 
 .we-know-title {
