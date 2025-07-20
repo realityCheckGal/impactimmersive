@@ -296,27 +296,27 @@ body {
 
 /* Services Section */
 .services-section {
-  padding: 100px 0;
+  padding: 80px 0;
   background: #f8fafc;
   text-align: center;
 }
 
 .services-section .section-title {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   color: #1e293b;
-  font-size: 2.2rem;
-  font-weight: 500;
+  font-size: 1.9rem;
+  font-weight: 400;
 }
 
 .section-subtitle {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #64748b;
-  margin-bottom: 3.5rem;
-  max-width: 600px;
+  margin-bottom: 3rem;
+  max-width: 550px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.6;
+  line-height: 1.5;
   font-weight: 400;
 }
 
