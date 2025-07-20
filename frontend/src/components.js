@@ -396,7 +396,6 @@ const Components = {
   FounderSection: () => (
     <section id="founder" className="founder-section">
       <div className="container">
-        <h2 className="section-title">Founder</h2>
         <div className="founder-content">
           <div className="founder-image">
             <img 
