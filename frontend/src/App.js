@@ -67,6 +67,7 @@ function App() {
         <WeKnowSection />
         <WhatIsARSection />
         <PainPointsSection />
+        <VisionSection />
         <ServicesSection />
         <CaseStudiesSection />
         <BenefitsSection />
