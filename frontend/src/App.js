@@ -69,6 +69,7 @@ function App() {
         <BenefitsSection />
         <FounderSection />
         <TeamSection />
+        <LogoSection />
         <ContactSection />
       </main>
       
