@@ -364,9 +364,17 @@ body {
 
 /* Vision Section */
 .vision-section {
-  background: #ffffff;
+  background-image: 
+    linear-gradient(rgba(124, 58, 237, 0.7), rgba(124, 58, 237, 0.7)),
+    url('./assets/images/vision-background.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
   padding: 80px 0;
-  color: #333;
+  color: white;
   text-align: center;
 }
 
@@ -377,16 +385,16 @@ body {
 }
 
 .vision-content p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.7;
   margin-bottom: 1.5rem;
-  color: #475569;
+  color: #ffffff;
 }
 
 .vision-content .services-intro {
   font-weight: 500;
-  font-size: 1.2rem;
-  color: #7c3aed;
+  font-size: 1.4rem;
+  color: #ffffff;
   margin-top: 2rem;
 }
 
