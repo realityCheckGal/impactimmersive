@@ -1027,8 +1027,17 @@ body {
     text-align: center;
   }
 
-  .services-grid {
+  .benefits-layout {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .benefits-main-title {
+    font-size: 2rem;
+  }
+
+  .benefits-image img {
+    height: 300px;
   }
 
   .cookie-content {
