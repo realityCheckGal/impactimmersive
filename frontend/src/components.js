@@ -500,6 +500,7 @@ const Components = {
     const [formData, setFormData] = useState({
       name: '',
       email: '',
+      organization: '',
       impactFocus: '',
       impactRating: '3',
       arFamiliarity: '3',
@@ -512,6 +513,7 @@ const Components = {
       setFormData({ 
         name: '', 
         email: '', 
+        organization: '', 
         impactFocus: '', 
         impactRating: '3', 
         arFamiliarity: '3', 
@@ -624,26 +626,29 @@ const Components = {
         
         <div className="contact-footer">
           <div className="container">
-            <div className="footer-content">
-              <div className="footer-info">
+            <div className="footer-main">
+              <div className="footer-company-info">
                 <h3>Impact Immersive</h3>
                 <p>Los Angeles, California, USA</p>
                 <p><a href="mailto:hello@impactimmersive.studio">hello@impactimmersive.studio</a></p>
-                <p><a href="tel:+13233251705">+13233251705</a></p>
+                <p><a href="tel:+13233251705">+1 (323) 325-1705</a></p>
                 <div className="social-links">
                   <a href="https://www.linkedin.com/company/impactimmersive" target="_blank" rel="noopener noreferrer">
                     LinkedIn
                   </a>
                 </div>
               </div>
-              
-              <div className="footer-legal">
+            </div>
+            
+            <div className="footer-separator"></div>
+            
+            <div className="footer-bottom">
+              <div className="footer-copyright">
                 <p>© 2025 Impact Immersive</p>
-                <div className="legal-links">
-                  <a href="#terms">Terms</a>
-                  <a href="#privacy">Privacy Policy</a>
-                </div>
-                <p className="website-credit">website by <a href="https://kokono.ie" target="_blank" rel="noopener noreferrer">kokono.ie</a></p>
+              </div>
+              <div className="footer-legal">
+                <a href="#terms">Terms</a>
+                <a href="#privacy">Privacy Policy</a>
               </div>
             </div>
           </div>
