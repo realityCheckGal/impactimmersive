@@ -93,14 +93,43 @@ document.addEventListener('click', function(event) {
   }
 });
 
-// Keyboard navigation support
-document.addEventListener('keydown', function(event) {
-  // Close mobile menu with Escape key
-  if (event.key === 'Escape') {
-    const nav = document.getElementById('nav');
-    nav.classList.remove('nav-open');
+// Benefits section interaction
+let activeBenefitIndex = null;
+
+function toggleBenefit(index) {
+  const description = document.getElementById(`description-${index}`);
+  const toggle = document.getElementById(`toggle-${index}`);
+  const benefitItem = description.closest('.benefit-item');
+  
+  // Close currently active benefit if it's not the one being clicked
+  if (activeBenefitIndex !== null && activeBenefitIndex !== index) {
+    const activeDescription = document.getElementById(`description-${activeBenefitIndex}`);
+    const activeToggle = document.getElementById(`toggle-${activeBenefitIndex}`);
+    const activeBenefitItem = activeDescription.closest('.benefit-item');
+    
+    activeDescription.classList.remove('expanded');
+    activeToggle.classList.remove('expanded');
+    activeToggle.textContent = '+';
+    activeBenefitItem.classList.remove('active');
   }
-});
+  
+  // Toggle the clicked benefit
+  if (activeBenefitIndex === index) {
+    // Close if already active
+    description.classList.remove('expanded');
+    toggle.classList.remove('expanded');
+    toggle.textContent = '+';
+    benefitItem.classList.remove('active');
+    activeBenefitIndex = null;
+  } else {
+    // Open the benefit
+    description.classList.add('expanded');
+    toggle.classList.add('expanded');
+    toggle.textContent = '−';
+    benefitItem.classList.add('active');
+    activeBenefitIndex = index;
+  }
+}
 
 // Simple animations on scroll (optional)
 function animateOnScroll() {
