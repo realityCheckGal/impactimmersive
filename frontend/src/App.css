@@ -717,6 +717,7 @@ body {
 /* Text left, image right layout */
 .case-study-text-left {
   grid-template-areas: "text image";
+  grid-template-columns: 1fr 2fr;
 }
 
 .case-study-text-left .case-study-text {
