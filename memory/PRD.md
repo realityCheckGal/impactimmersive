@@ -18,16 +18,16 @@ Create a pixel-perfect, frontend-only replica of the website `https://impactimme
 
 ## What's Been Implemented
 
-### Completed Sections (as of January 7, 2025)
+### Completed Sections
 - ✅ **Hero Section** - Two-column layout with left-aligned text and full-height image
 - ✅ **"We Care Deeply" Section** - Full-bleed background with purple overlay
 - ✅ **"What is Augmented Reality" Section** - Magazine-style two-column layout
 - ✅ **"Pain Points" Section** - Multi-color gradient with custom SVG question mark
 - ✅ **"Vision" Section** - Full-bleed background with typography hierarchy
 - ✅ **"Immersive Experiences" Section** - Centered text with transparent PNG decorative images
-- ✅ **Case Studies Section** - Alternating image/text layouts
-- ✅ **Benefits Section** - Accordion-style expandable content
-- ✅ **Founder Section** - Profile with bio
+- ✅ **Case Studies Section** - LA skyline background in header, 3 projects with custom images
+- ✅ **Benefits Section** - Colorful gradient background, accordion list, custom image
+- ✅ **Founder Section** - Custom founder image with transparent PNG
 - ✅ **Team Section** - Company collaboration info
 - ✅ **Logo/Partners Section** - Partner logos grid
 - ✅ **Contact Section** - Form with footer
@@ -35,21 +35,25 @@ Create a pixel-perfect, frontend-only replica of the website `https://impactimme
 - ✅ **Cookie Consent Banner**
 
 ### Latest Changes (January 7, 2025)
-- Added background image to "Case Studies" section with purple gradient overlay (same treatment as "We Care Deeply")
-- Updated Case Studies text colors to white for visibility on purple background
-- Removed "Our Services" section from main page
-- "Services" navigation link is now disabled (text visible, not clickable)
-- Services page to be built and linked later
+- Removed "Our Services" section from main page (Services nav link disabled for future page)
+- Added LA city skyline background to "Case Studies" header with purple overlay
+- Updated all 3 project images (Concrete Oasis, Flowrish, Emergent Virtues) with custom transparent PNGs
+- Fixed project layout ratios: image 2/3 width, text 1/3 width
+- Left images align to left edge, right images align to right edge
+- Added colorful gradient background to Benefits section
+- Updated Benefits section image with custom transparent PNG (1:2 ratio - image:text)
+- Updated Founder section with custom transparent PNG at 75% size
 
 ## Code Architecture
 ```
 /app/
 ├── frontend/                     # React frontend
-│   ├── public/images/           # Locally stored images
+│   ├── public/images/           # Locally stored images (for JSX references)
 │   └── src/
 │       ├── App.js               # Main layout component
 │       ├── App.css              # Main stylesheet
-│       └── components.js        # All React components
+│       ├── components.js        # All React components
+│       └── assets/images/       # Images for CSS references
 ├── static-html-version/         # Static HTML for GoDaddy
 │   ├── index.html
 │   ├── styles.css
@@ -60,6 +64,15 @@ Create a pixel-perfect, frontend-only replica of the website `https://impactimme
     └── PRD.md
 ```
 
+## Image Assets Added
+- `case-studies-header-bg.png` - LA skyline for Case Studies header
+- `concrete-oasis.png` - Concrete Oasis project image
+- `flowrish.png` - Flowrish project image
+- `emergent-virtues.png` - Emergent Virtues project image
+- `benefits-bg.png` - Colorful gradient background for Benefits section
+- `benefits-image.png` - AR visualization image for Benefits section
+- `founder.png` - Suzan Oslin founder image
+
 ## Prioritized Backlog
 
 ### P0 - High Priority
@@ -69,6 +82,7 @@ Create a pixel-perfect, frontend-only replica of the website `https://impactimme
 ### P1 - Medium Priority
 - Final visual review and polish
 - Responsive testing across devices
+- Any remaining section refinements per user feedback
 
 ### P2 - Low Priority / Future
 - Refactor components.js into modular files
@@ -80,3 +94,4 @@ Create a pixel-perfect, frontend-only replica of the website `https://impactimme
 - All images must be stored locally (not external URLs) for GoDaddy deployment
 - CSS uses multiple-background technique for overlay effects
 - Navigation uses smooth scrolling with active state tracking
+- Transparent PNGs should have no background, border, or shadow applied
