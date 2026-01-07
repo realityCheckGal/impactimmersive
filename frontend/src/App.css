@@ -759,12 +759,12 @@ body {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
-  color: #7c3aed;
+  color: white;
   letter-spacing: -0.015em;
 }
 
 .case-study-text p {
-  color: #64748b;
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.6;
   margin-bottom: 1.2rem;
   font-size: 0.95rem;
@@ -772,7 +772,7 @@ body {
 
 .case-study-impact {
   font-weight: 500 !important;
-  color: #7c3aed !important;
+  color: white !important;
 }
 
 /* Benefits Section */
