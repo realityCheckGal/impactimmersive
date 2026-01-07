@@ -35,6 +35,8 @@ Create a pixel-perfect, frontend-only replica of the website `https://impactimme
 - ✅ **Cookie Consent Banner**
 
 ### Latest Changes (January 7, 2025)
+- Added background image to "Case Studies" section with purple gradient overlay (same treatment as "We Care Deeply")
+- Updated Case Studies text colors to white for visibility on purple background
 - Removed "Our Services" section from main page
 - "Services" navigation link is now disabled (text visible, not clickable)
 - Services page to be built and linked later
