@@ -455,7 +455,7 @@ const Components = {
         <div className="founder-content">
           <div className="founder-image">
             <img 
-              src="https://images.unsplash.com/photo-1618544976420-1f213fcf2052?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHx0ZWFtJTIwdGVjaG5vbG9neSUyMHdvcmtzcGFjZXxlbnwwfHx8Ymx1ZXwxNzUyOTU2MjAzfDA&ixlib=rb-4.1.0&q=85" 
+              src="/images/founder.png" 
               alt="Suzan Oslin - Founder"
               loading="lazy"
             />
