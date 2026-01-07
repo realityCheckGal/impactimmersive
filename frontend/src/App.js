@@ -1,27 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Components from './components';
+
+// Import individual components from the components directory
+import {
+  Header,
+  HeroSection,
+  WeKnowSection,
+  WhatIsARSection,
+  PainPointsSection,
+  VisionSection,
+  ImmersiveExperiencesSection,
+  CaseStudiesSection,
+  BenefitsSection,
+  FounderSection,
+  TeamSection,
+  LogoSection,
+  ContactSection,
+  CookieConsent
+} from './components';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const { 
-    Header, 
-    HeroSection, 
-    WeKnowSection,
-    WhatIsARSection,
-    PainPointsSection,
-    VisionSection,
-    ImmersiveExperiencesSection, 
-    CaseStudiesSection, 
-    BenefitsSection, 
-    FounderSection,
-    TeamSection,
-    LogoSection,
-    ContactSection,
-    CookieConsent
-  } = Components;
 
   useEffect(() => {
     const handleScroll = () => {
