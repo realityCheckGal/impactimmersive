@@ -349,7 +349,7 @@ const Components = {
           <div className="case-study-content-wrapper case-study-image-left">
             <div className="case-study-image">
               <img 
-                src="https://images.unsplash.com/photo-1716703742196-9986679eb03f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwdGVjaG5vbG9neSUyMHdvcmtzcGFjZXxlbnwwfHx8Ymx1ZXwxNzUyOTU2MjAzfDA&ixlib=rb-4.1.0&q=85" 
+                src="/images/emergent-virtues.png" 
                 alt="Emergent Virtues Project"
                 loading="lazy"
               />
