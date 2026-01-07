@@ -828,17 +828,15 @@ body {
 
 .benefits-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   gap: 4rem;
   align-items: flex-start;
 }
 
 .benefits-image img {
   width: 100%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-height: 600px;
+  object-fit: contain;
 }
 
 /* Benefits List */

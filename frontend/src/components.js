@@ -415,7 +415,7 @@ const Components = {
             <div className="benefits-layout">
               <div className="benefits-image">
                 <img 
-                  src="https://images.unsplash.com/photo-1660020618837-aea80a4b7d87?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHx2aXJ0dWFsJTIwcmVhbGl0eSUyMGhlYWRzZXR8ZW58MHx8fGJsdWV8MTc1Mjk1NjIyMHww&ixlib=rb-4.1.0&q=85" 
+                  src="/images/benefits-image.png" 
                   alt="AR Benefits Visualization"
                   loading="lazy"
                 />
