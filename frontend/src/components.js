@@ -214,7 +214,7 @@ const Components = {
           
           <div className="immersive-image-upper-right">
             <img 
-              src="/images/services-upper-right.jpg" 
+              src="/images/transparent-upper-right.png" 
               alt="Natural growth and connection"
               loading="lazy"
             />
@@ -222,7 +222,7 @@ const Components = {
           
           <div className="immersive-image-lower-left">
             <img 
-              src="/images/services-lower-right.jpg" 
+              src="/images/transparent-lower-left.png" 
               alt="Team collaboration"
               loading="lazy"
             />
