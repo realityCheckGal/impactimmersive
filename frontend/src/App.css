@@ -653,12 +653,18 @@ body {
 /* Case Studies Section */
 .case-studies-section {
   padding: 0;
-  background: #ffffff;
+  background-image: 
+    linear-gradient(rgba(124, 58, 237, 0.85), rgba(124, 58, 237, 0.85)),
+    url('/images/case-studies-background.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
 /* Purple header section */
 .case-studies-header {
-  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  background: transparent;
   padding: 60px 0;
   text-align: center;
 }
@@ -674,7 +680,7 @@ body {
 
 /* Full-width case study containers */
 .case-study-full-width {
-  background: #ffffff;
+  background: transparent;
   padding: 80px 0;
 }
 
