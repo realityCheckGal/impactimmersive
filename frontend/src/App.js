@@ -14,7 +14,6 @@ function App() {
     PainPointsSection,
     VisionSection,
     ImmersiveExperiencesSection, 
-    ServicesSection, 
     CaseStudiesSection, 
     BenefitsSection, 
     FounderSection,
@@ -26,7 +25,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'we-know', 'what-is-ar', 'services', 'case-studies', 'benefits', 'founder', 'team', 'contact'];
+      const sections = ['home', 'we-know', 'what-is-ar', 'case-studies', 'benefits', 'founder', 'team', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       sections.forEach(section => {
@@ -70,7 +69,6 @@ function App() {
         <PainPointsSection />
         <VisionSection />
         <ImmersiveExperiencesSection scrollToSection={scrollToSection} />
-        <ServicesSection />
         <CaseStudiesSection />
         <BenefitsSection />
         <FounderSection />

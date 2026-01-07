@@ -11,13 +11,9 @@ const Components = {
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
           <ul className="nav-list">
             <li>
-              <a 
-                href="#services" 
-                className={activeSection === 'services' ? 'active' : ''}
-                onClick={(e) => { e.preventDefault(); scrollToSection('services'); }}
-              >
+              <span className="nav-disabled">
                 Services
-              </a>
+              </span>
             </li>
             <li>
               <a 
