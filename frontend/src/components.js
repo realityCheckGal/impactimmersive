@@ -331,7 +331,7 @@ const Components = {
             </div>
             <div className="case-study-image">
               <img 
-                src="https://images.unsplash.com/photo-1656163158223-0150e7e12cc6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxuYXR1cmUlMjBlbnZpcm9ubWVudHxlbnwwfHx8Ymx1ZXwxNzUyOTU2MjI4fDA&ixlib=rb-4.1.0&q=85" 
+                src="/images/flowrish.png" 
                 alt="Flowrish Project"
                 loading="lazy"
               />
