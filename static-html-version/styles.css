@@ -696,8 +696,8 @@ body {
 
 .case-study-content-wrapper {
   display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 4rem;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -708,6 +708,7 @@ body {
 
 .case-study-image-left .case-study-image {
   grid-area: image;
+  justify-self: start;
 }
 
 .case-study-image-left .case-study-text {
@@ -725,12 +726,23 @@ body {
 
 .case-study-text-left .case-study-image {
   grid-area: image;
+  justify-self: end;
 }
 
 .case-study-image img {
   width: 100%;
   max-height: 500px;
   object-fit: contain;
+}
+
+/* Left-aligned images */
+.case-study-image-left .case-study-image img {
+  object-position: left;
+}
+
+/* Right-aligned images */
+.case-study-text-left .case-study-image img {
+  object-position: right;
 }
 
 /* Project header with orange label and line inline */
