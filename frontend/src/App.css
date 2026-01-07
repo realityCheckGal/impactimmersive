@@ -660,7 +660,7 @@ body {
 .case-studies-header {
   background-image: 
     linear-gradient(rgba(124, 58, 237, 0.6), rgba(124, 58, 237, 0.6)),
-    url('./assets/images/case-studies-header-bg.jpg');
+    url('./assets/images/case-studies-header-bg.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
