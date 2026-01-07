@@ -662,7 +662,7 @@ body {
 /* Purple header section with background image */
 .case-studies-header {
   background-image: 
-    linear-gradient(rgba(124, 58, 237, 0.7), rgba(124, 58, 237, 0.7)),
+    linear-gradient(rgba(124, 58, 237, 0.5), rgba(124, 58, 237, 0.5)),
     url('images/case-studies-header-bg.png');
   background-size: cover;
   background-position: center center;
