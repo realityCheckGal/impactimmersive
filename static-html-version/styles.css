@@ -1377,10 +1377,6 @@ body {
     text-align: center;
   }
 
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-
   .cookie-content {
     flex-direction: column;
     text-align: center;
