@@ -653,19 +653,18 @@ body {
 /* Case Studies Section */
 .case-studies-section {
   padding: 0;
+  background: #ffffff;
+}
+
+/* Purple header section with background image */
+.case-studies-header {
   background-image: 
-    linear-gradient(rgba(124, 58, 237, 0.85), rgba(124, 58, 237, 0.85)),
-    url('./assets/images/case-studies-background.jpg');
+    linear-gradient(rgba(124, 58, 237, 0.7), rgba(124, 58, 237, 0.7)),
+    url('./assets/images/case-studies-header-bg.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-/* Purple header section */
-.case-studies-header {
-  background: transparent;
-  padding: 60px 0;
+  padding: 80px 0;
   text-align: center;
 }
 
@@ -680,14 +679,14 @@ body {
 
 /* Full-width case study containers */
 .case-study-full-width {
-  background: transparent;
+  background: #ffffff;
   padding: 80px 0;
 }
 
 /* Purple separator lines between case studies */
 .case-study-separator {
-  height: 1px;
-  background: rgba(255, 255, 255, 0.3);
+  height: 2px;
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
   width: 100%;
   margin: 0;
 }
@@ -759,12 +758,12 @@ body {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
-  color: white;
+  color: #7c3aed;
   letter-spacing: -0.015em;
 }
 
 .case-study-text p {
-  color: rgba(255, 255, 255, 0.9);
+  color: #64748b;
   line-height: 1.6;
   margin-bottom: 1.2rem;
   font-size: 0.95rem;
@@ -772,7 +771,7 @@ body {
 
 .case-study-impact {
   font-weight: 500 !important;
-  color: white !important;
+  color: #7c3aed !important;
 }
 
 /* Benefits Section */
