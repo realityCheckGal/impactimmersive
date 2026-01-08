@@ -16,62 +16,88 @@ Create a pixel-perfect, frontend-only replica of the website `https://impactimme
 - **Styling**: CSS with Flexbox and Grid
 - **Static Version**: Plain HTML/CSS/JS for GoDaddy deployment
 
+## Code Architecture (After Refactoring)
+
+### React Application Structure
+```
+/app/frontend/
+├── src/
+│   ├── App.js                    # Main app component (85 lines)
+│   ├── App.css                   # Main stylesheet (1391 lines)
+│   ├── components/               # Modular component files
+│   │   ├── index.js              # Centralized exports
+│   │   ├── Header.js             # Navigation header
+│   │   ├── HeroSection.js        # Hero/landing section
+│   │   ├── WeKnowSection.js      # "We Care Deeply" section
+│   │   ├── WhatIsARSection.js    # AR explanation section
+│   │   ├── PainPointsSection.js  # Pain points with SVG
+│   │   ├── VisionSection.js      # Vision statement
+│   │   ├── ImmersiveExperiencesSection.js
+│   │   ├── CaseStudiesSection.js # Projects showcase
+│   │   ├── BenefitsSection.js    # Accordion benefits list
+│   │   ├── FounderSection.js     # Suzan Oslin bio
+│   │   ├── TeamSection.js        # Team description
+│   │   ├── LogoSection.js        # Partner logos
+│   │   ├── ContactSection.js     # Contact form & footer
+│   │   └── CookieConsent.js      # Cookie banner
+│   ├── assets/images/            # Images for CSS references
+│   └── index.js                  # React entry point
+├── public/
+│   ├── images/                   # Images for JSX references
+│   ├── index.html
+│   └── terms.html
+└── package.json
+```
+
+### Static HTML Structure
+```
+/app/static-html-version/
+├── index.html
+├── styles.css                    # (1436 lines)
+├── script.js
+├── terms.html
+└── images/                       # All images for static version
+```
+
 ## What's Been Implemented
 
 ### Completed Sections
-- ✅ **Hero Section** - Two-column layout with left-aligned text and full-height image
-- ✅ **"We Care Deeply" Section** - Full-bleed background with purple overlay
-- ✅ **"What is Augmented Reality" Section** - Magazine-style two-column layout
-- ✅ **"Pain Points" Section** - Multi-color gradient with custom SVG question mark
-- ✅ **"Vision" Section** - Full-bleed background with typography hierarchy
-- ✅ **"Immersive Experiences" Section** - Centered text with transparent PNG decorative images
-- ✅ **Case Studies Section** - LA skyline background in header, 3 projects with custom images
-- ✅ **Benefits Section** - Colorful gradient background, accordion list, custom image
-- ✅ **Founder Section** - Custom founder image with transparent PNG
-- ✅ **Team Section** - Company collaboration info
-- ✅ **Logo/Partners Section** - Partner logos grid
-- ✅ **Contact Section** - Form with footer
-- ✅ **Terms of Service Page** - Standalone page with header/footer
-- ✅ **Cookie Consent Banner**
+- ✅ Hero Section
+- ✅ "We Care Deeply" Section
+- ✅ "What is Augmented Reality" Section
+- ✅ "Pain Points" Section
+- ✅ "Vision" Section
+- ✅ "Immersive Experiences" Section
+- ✅ Case Studies Section (3 projects with custom images)
+- ✅ Benefits Section (accordion with custom background)
+- ✅ Founder Section (custom transparent PNG)
+- ✅ Team Section
+- ✅ Logo/Partners Section
+- ✅ Contact Section
+- ✅ Terms of Service Page
+- ✅ Cookie Consent Banner
 
-### Latest Changes (January 7, 2025)
-- Removed "Our Services" section from main page (Services nav link disabled for future page)
-- Added LA city skyline background to "Case Studies" header with purple overlay
-- Updated all 3 project images (Concrete Oasis, Flowrish, Emergent Virtues) with custom transparent PNGs
-- Fixed project layout ratios: image 2/3 width, text 1/3 width
-- Left images align to left edge, right images align to right edge
-- Added colorful gradient background to Benefits section
-- Updated Benefits section image with custom transparent PNG (1:2 ratio - image:text)
-- Updated Founder section with custom transparent PNG at 75% size
+### Refactoring Completed (January 7, 2025)
+- **Component Modularization**: Split monolithic `components.js` (738 lines) into 14 individual component files
+- **CSS Cleanup**: Removed ~77 lines of unused Services section CSS
+- **Image Cleanup**: Removed unused service images and duplicate background files
+- **Import Optimization**: Created centralized `components/index.js` for clean imports
 
-## Code Architecture
-```
-/app/
-├── frontend/                     # React frontend
-│   ├── public/images/           # Locally stored images (for JSX references)
-│   └── src/
-│       ├── App.js               # Main layout component
-│       ├── App.css              # Main stylesheet
-│       ├── components.js        # All React components
-│       └── assets/images/       # Images for CSS references
-├── static-html-version/         # Static HTML for GoDaddy
-│   ├── index.html
-│   ├── styles.css
-│   ├── script.js
-│   ├── terms.html
-│   └── images/
-└── memory/
-    └── PRD.md
-```
-
-## Image Assets Added
-- `case-studies-header-bg.png` - LA skyline for Case Studies header
-- `concrete-oasis.png` - Concrete Oasis project image
-- `flowrish.png` - Flowrish project image
-- `emergent-virtues.png` - Emergent Virtues project image
-- `benefits-bg.png` - Colorful gradient background for Benefits section
-- `benefits-image.png` - AR visualization image for Benefits section
-- `founder.png` - Suzan Oslin founder image
+## Image Assets
+All images stored locally in `/public/images/`:
+- `hero-image.jpg`
+- `case-studies-header-bg.png` - LA skyline
+- `concrete-oasis.png` - Project image (transparent)
+- `flowrish.png` - Project image (transparent)
+- `emergent-virtues.png` - Project image (transparent)
+- `benefits-bg.png` - Colorful gradient background
+- `benefits-image.png` - AR eye artwork (transparent)
+- `founder.png` - Suzan Oslin photo (transparent)
+- `transparent-upper-right.png` - Decorative image
+- `transparent-lower-left.png` - Decorative image
+- `vision-background.jpg`
+- `we-care-background.jpg`
+- `what-is-ar-background.jpg`
 
 ## Prioritized Backlog
 
@@ -82,16 +108,15 @@ Create a pixel-perfect, frontend-only replica of the website `https://impactimme
 ### P1 - Medium Priority
 - Final visual review and polish
 - Responsive testing across devices
-- Any remaining section refinements per user feedback
 
 ### P2 - Low Priority / Future
-- Refactor components.js into modular files
-- Standardize image path strategy
 - Add Privacy Policy page
 - Performance optimization
+- Consider CSS modules or styled-components for further modularity
 
 ## Notes
-- All images must be stored locally (not external URLs) for GoDaddy deployment
+- All images stored locally for GoDaddy deployment
+- Transparent PNGs should have no background, border, or shadow
 - CSS uses multiple-background technique for overlay effects
 - Navigation uses smooth scrolling with active state tracking
-- Transparent PNGs should have no background, border, or shadow applied
+- Services section removed; nav link disabled pending future Services page
