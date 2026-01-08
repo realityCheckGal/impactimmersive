@@ -15,8 +15,8 @@ function toggleMenu() {
   nav.classList.toggle('nav-open');
 }
 
-// Contact form handling
-function handleSubmit(event) {
+// Contact form handling - mailto approach
+function handleContactSubmit(event) {
   event.preventDefault();
   const form = event.target;
   const formData = new FormData(form);
@@ -24,14 +24,13 @@ function handleSubmit(event) {
   // Get form values
   const name = formData.get('name');
   const email = formData.get('email');
-  const organization = formData.get('organization');
   const message = formData.get('message');
   
-  // Show confirmation message
-  alert('Thank you for your message! We\'ll get back to you soon.');
+  // Create mailto link
+  const subject = encodeURIComponent(`Contact from ${name}`);
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
   
-  // Reset form
-  form.reset();
+  window.location.href = `mailto:hello@impactimmersive.studio?subject=${subject}&body=${body}`;
 }
 
 // Cookie consent handling
