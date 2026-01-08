@@ -4,25 +4,18 @@ const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    organization: '',
-    impactFocus: '',
-    impactRating: '3',
-    arFamiliarity: '3',
-    arPotential: ''
+    message: ''
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Thank you for your message! We\'ll get back to you soon.');
-    setFormData({ 
-      name: '', 
-      email: '', 
-      organization: '', 
-      impactFocus: '', 
-      impactRating: '3', 
-      arFamiliarity: '3', 
-      arPotential: '' 
-    });
+    
+    const subject = encodeURIComponent(`Contact from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    );
+    
+    window.location.href = `mailto:hello@impactimmersive.studio?subject=${subject}&body=${body}`;
   };
 
   const handleChange = (e) => {
@@ -36,95 +29,47 @@ const ContactSection = () => {
     <section id="contact" className="contact-section">
       <div className="contact-hero">
         <div className="contact-overlay">
-          <div className="container">
-            <h2 className="contact-title">Augment your Reality, Impact the World</h2>
+          <h2 className="contact-title">Augment your Reality, Impact the World</h2>
+          
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+            </div>
             
-            <form className="contact-form" onSubmit={handleSubmit}>
-              <div className="form-group">
-                <label htmlFor="impactFocus">On what is your impact focused?</label>
-                <textarea
-                  id="impactFocus"
-                  name="impactFocus"
-                  rows="3"
-                  value={formData.impactFocus}
-                  onChange={handleChange}
-                  required
-                ></textarea>
-              </div>
-              
-              <div className="form-group">
-                <label htmlFor="impactRating">On a scale from 1-5 (one being not very much, five being stellar) how impactful are your communications?</label>
-                <select
-                  id="impactRating"
-                  name="impactRating"
-                  value={formData.impactRating}
-                  onChange={handleChange}
-                  required
-                >
-                  <option value="1">1 - Not very much</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5 - Stellar</option>
-                </select>
-              </div>
-              
-              <div className="form-group">
-                <label htmlFor="arFamiliarity">On a scale from 1-5 (one being not very much, five being expert) how familiar are you with augmented reality?</label>
-                <select
-                  id="arFamiliarity"
-                  name="arFamiliarity"
-                  value={formData.arFamiliarity}
-                  onChange={handleChange}
-                  required
-                >
-                  <option value="1">1 - Not very much</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5 - Expert</option>
-                </select>
-              </div>
-              
-              <div className="form-group">
-                <label htmlFor="arPotential">How might augmented reality skyrocket your impact?</label>
-                <textarea
-                  id="arPotential"
-                  name="arPotential"
-                  rows="3"
-                  value={formData.arPotential}
-                  onChange={handleChange}
-                  required
-                ></textarea>
-              </div>
-              
-              <div className="form-group">
-                <label htmlFor="name">First Name, Last Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              
-              <button type="submit" className="submit-button">Send</button>
-            </form>
-          </div>
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            
+            <div className="form-group">
+              <label htmlFor="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              ></textarea>
+            </div>
+            
+            <button type="submit" className="submit-button">Send</button>
+          </form>
         </div>
       </div>
       
