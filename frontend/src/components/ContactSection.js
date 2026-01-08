@@ -80,7 +80,7 @@ const ContactSection = () => {
               <h3>Impact Immersive</h3>
               <p>Los Angeles, California, USA</p>
               <p><a href="mailto:hello@impactimmersive.studio">hello@impactimmersive.studio</a></p>
-              <p><a href="tel:+13233251705">+1 (323) 325-1705</a></p>
+              <p><a href="tel:+13238422096">+1 (323) 842-2096</a></p>
               <div className="social-links">
                 <a href="https://www.linkedin.com/company/impactimmersive" target="_blank" rel="noopener noreferrer">
                   LinkedIn
