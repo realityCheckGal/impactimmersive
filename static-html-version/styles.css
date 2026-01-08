@@ -246,11 +246,11 @@ body {
 }
 
 .we-know-text p {
-  font-size: 0.95rem;
-  line-height: 1.5;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 1.5rem;
-  color: rgba(255, 255, 255, 0.75);
-  font-weight: 400;
+  line-height: 1.75;
+  font-weight: 300;
 }
 
 .we-know-text .tagline {
