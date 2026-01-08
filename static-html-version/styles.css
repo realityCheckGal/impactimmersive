@@ -454,22 +454,24 @@ body {
 }
 
 .pain-point-questions p {
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 1.3rem;
+  line-height: 1.75;
   color: #64748b;
   margin-bottom: 1rem;
   font-style: normal;
+  font-weight: 300;
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .vision-statement p {
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 1.3rem;
+  line-height: 1.75;
   color: #64748b;
   margin-bottom: 1rem;
   text-align: center;
+  font-weight: 300;
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
