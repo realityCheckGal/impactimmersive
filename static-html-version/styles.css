@@ -1119,7 +1119,7 @@ body {
 
 /* Contact Footer */
 .contact-footer {
-  background: linear-gradient(180deg, #7c3aed 0%, #8b5cf6 100%);
+  background: transparent;
   padding: 3rem 0 1.5rem;
   color: white;
 }
