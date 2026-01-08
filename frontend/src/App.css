@@ -934,9 +934,10 @@ body {
 
 .team-text p {
   color: rgba(255, 255, 255, 0.85);
-  line-height: 1.6;
+  line-height: 1.75;
   margin-bottom: 1.2rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 
 /* Logo Section */
