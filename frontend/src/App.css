@@ -167,10 +167,10 @@ body {
 
 .hero-description {
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.75;
   margin-bottom: 2.5rem;
-  color: #64748b;
+  color: #183f1c;
   max-width: 460px;
 }
 
