@@ -704,9 +704,10 @@ body {
 
 .case-study-text p {
   color: #64748b;
-  line-height: 1.6;
+  line-height: 1.75;
   margin-bottom: 1.2rem;
-  font-size: 0.95rem;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 
 .case-study-impact {
