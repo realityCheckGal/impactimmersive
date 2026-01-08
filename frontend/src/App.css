@@ -431,11 +431,11 @@ body {
 }
 
 .ar-text p {
-  font-size: 0.9rem;
-  line-height: 1.5;
   color: #64748b;
-  margin-bottom: 1rem;
-  font-weight: 400;
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 
 .pain-points {
