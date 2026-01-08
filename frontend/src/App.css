@@ -905,7 +905,12 @@ body {
 /* Team Section */
 .team-section {
   padding: 80px 0;
-  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  background-image: 
+    linear-gradient(rgba(124, 58, 237, 0.7), rgba(124, 58, 237, 0.7)),
+    url('./assets/images/team-bg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   color: white;
 }
 
