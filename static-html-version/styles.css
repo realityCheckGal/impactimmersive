@@ -1010,6 +1010,19 @@ body {
   letter-spacing: -0.015em;
 }
 
+.partners-image-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.partners-full-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Legacy styles - keeping for reference */
 .logos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

@@ -1,52 +1,17 @@
 import React from 'react';
+import partnersLogos from '../assets/images/partners-logos.webp';
 
 const LogoSection = () => (
   <section id="partners" className="logo-section">
     <div className="container">
       <h2 className="logo-section-title">Trusted Partners & Collaborators</h2>
-      <div className="logos-grid">
-        <div className="logo-item">
-          <img 
-            src="https://via.placeholder.com/150x80/7c3aed/ffffff?text=Disney"
-            alt="Disney"
-            loading="lazy"
-          />
-        </div>
-        <div className="logo-item">
-          <img 
-            src="https://via.placeholder.com/150x80/7c3aed/ffffff?text=Warner+Bros"
-            alt="Warner Brothers"
-            loading="lazy"
-          />
-        </div>
-        <div className="logo-item">
-          <img 
-            src="https://via.placeholder.com/150x80/7c3aed/ffffff?text=Technicolor"
-            alt="Technicolor"
-            loading="lazy"
-          />
-        </div>
-        <div className="logo-item">
-          <img 
-            src="https://via.placeholder.com/150x80/7c3aed/ffffff?text=Unity"
-            alt="Unity Technologies"
-            loading="lazy"
-          />
-        </div>
-        <div className="logo-item">
-          <img 
-            src="https://via.placeholder.com/150x80/7c3aed/ffffff?text=Microsoft"
-            alt="Microsoft"
-            loading="lazy"
-          />
-        </div>
-        <div className="logo-item">
-          <img 
-            src="https://via.placeholder.com/150x80/7c3aed/ffffff?text=Meta"
-            alt="Meta"
-            loading="lazy"
-          />
-        </div>
+      <div className="partners-image-container">
+        <img 
+          src={partnersLogos}
+          alt="Clients, Partners, and Supporters - Including Disney, Warner Bros, Technicolor, TrueCar, OTIS, Citi, Fandango, Niantic, and more"
+          loading="lazy"
+          className="partners-full-image"
+        />
       </div>
     </div>
   </section>
