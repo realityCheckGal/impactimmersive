@@ -331,12 +331,12 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 0;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .pain-points-text {
   text-align: left;
-  padding: 0 4rem 0 4rem;
+  padding: 4rem 4rem 4rem 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -346,15 +346,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  padding: 2rem 0;
+  min-height: 100vh;
+  padding: 2rem 4rem;
 }
 
 .giant-question-mark {
   width: 100%;
   height: 100%;
-  max-width: 600px;
-  max-height: 90vh;
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-mark-img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
 }
 
 .question-mark-svg {
@@ -364,12 +373,18 @@ body {
 }
 
 .pain-point-questions p {
-  font-size: 3rem;
-  line-height: 1.4;
+  font-size: 1.65rem;
+  line-height: 1.5;
   margin-bottom: 2.5rem;
   color: #ffffff !important;
-  font-weight: 400;
+  font-weight: 300;
   text-align: left !important;
+}
+
+.pain-point-questions p.trendsetter {
+  font-weight: 700;
+  text-align: right !important;
+  margin-top: 1rem;
 }
 
 /* Vision Section */
