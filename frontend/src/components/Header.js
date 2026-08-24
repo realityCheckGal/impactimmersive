@@ -34,9 +34,9 @@ const Header = ({ activeSection, scrollToSection, isMenuOpen, setIsMenuOpen }) =
           </li>
           <li>
             <a 
-              href="#team" 
-              className={activeSection === 'team' ? 'active' : ''}
-              onClick={(e) => { e.preventDefault(); scrollToSection('team'); }}
+              href="#founder" 
+              className={activeSection === 'founder' ? 'active' : ''}
+              onClick={(e) => { e.preventDefault(); scrollToSection('founder'); }}
             >
               Team
             </a>
