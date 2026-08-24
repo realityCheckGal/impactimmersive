@@ -10,11 +10,6 @@ const Header = ({ activeSection, scrollToSection, isMenuOpen, setIsMenuOpen }) =
       <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
         <ul className="nav-list">
           <li>
-            <span className="nav-disabled">
-              Services
-            </span>
-          </li>
-          <li>
             <a 
               href="#case-studies" 
               className={activeSection === 'case-studies' ? 'active' : ''}
